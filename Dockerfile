@@ -17,5 +17,5 @@ COPY --from=teddysun/xray /usr/share/xray/ /usr/local/bin/bin/
 
 VOLUME [ "/etc/x-ui" ]
 WORKDIR /usr/local/bin
-EXPOSE 54321
+EXPOSE 54321 14605
 ENTRYPOINT [ "x-ui" ]
