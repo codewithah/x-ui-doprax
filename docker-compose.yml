@@ -22,3 +22,9 @@ services:
       - $PWD/cert/:/root/cert/
     restart: unless-stopped
     network_mode: host
+    ports:
+    - 80
+    - 443
+    - 54321
+    - 14791
+    - 40778
