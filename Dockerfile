@@ -1,8 +1,6 @@
 FROM golang:latest AS builder
-ARG XUI_REPO="https://github.com/vaxilu/x-ui"
-RUN git clone ${XUI_REPO} --depth=1
-WORKDIR /go/x-ui
-RUN go build
+COPY get_xui_alpha.sh get_xui.sh
+RUN bash get_xui.sh
 
 FROM debian:11-slim
 LABEL org.opencontainers.image.authors="https://github.com/Chasing66"
