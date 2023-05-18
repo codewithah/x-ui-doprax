@@ -15,7 +15,7 @@
 version: "3.9"
 services:
   xui:
-    image: enwaiax/x-ui:alpha
+    image: enwaiax/x-ui:alpha-zh
     container_name: xui
     volumes:
       - $PWD/db/:/etc/x-ui/
